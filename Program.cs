@@ -20,6 +20,7 @@ namespace Zoologico.classes
                 Console.WriteLine("3. Listar animais");
                 Console.WriteLine("4. Alimentar animais");
                 Console.WriteLine("5. Sair");
+                Console.WriteLine("6. Adicionar reptil");
 
                 string opcao = Console.ReadLine();
 
@@ -72,6 +73,23 @@ namespace Zoologico.classes
 
                     case "4":
                         zoologico.AlimentarAnimais();
+
+                        break;
+
+                    case "6":
+                        Console.WriteLine("Digite o nome do reptil: ");
+                        string nomeReptil = Console.ReadLine();
+
+                        Console.WriteLine("Digite a idade do reptil: ");
+                        int idadeReptil = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Digite o tipo de de escama do reptil: ");
+                        string tipoEscama = Console.ReadLine();
+
+
+                        Reptil reptil = new Reptil(nomeReptil, idadeReptil, tipoEscama);
+
+                        zoologico.AdicionarAnimal(reptil);
 
                         break;
 

@@ -46,6 +46,7 @@
     <Compile Include="classes\Animal.cs" />
     <Compile Include="classes\Ave.cs" />
     <Compile Include="classes\Mamifero.cs" />
+    <Compile Include="classes\Reptil.cs" />
     <Compile Include="classes\ZoologicoClass.cs" />
     <Compile Include="interfaces\IAlimentavel.cs" />
     <Compile Include="Program.cs" />
